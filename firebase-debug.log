@@ -1,0 +1,42 @@
+[debug] [2020-11-05T17:35:31.309Z] ----------------------------------------------------------------------
+[debug] [2020-11-05T17:35:31.313Z] Command:       /usr/bin/node /usr/local/bin/firebase init
+[debug] [2020-11-05T17:35:31.314Z] CLI Version:   8.12.1
+[debug] [2020-11-05T17:35:31.314Z] Platform:      linux
+[debug] [2020-11-05T17:35:31.314Z] Node Version:  v10.19.0
+[debug] [2020-11-05T17:35:31.314Z] Time:          Thu Nov 05 2020 19:35:31 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-11-05T17:35:31.315Z] ----------------------------------------------------------------------
+[debug] [2020-11-05T17:35:31.315Z] 
+[debug] [2020-11-05T17:35:31.323Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-05T17:35:31.324Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/bishoy/Desktop/room-booking-system/web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2020-11-05T17:35:43.417Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"reservation-system-tc","name":"reservation-system-tc"}
+[debug] [2020-11-05T17:35:44.516Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Nov 2020 17:35:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=836","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-05T17:35:44.522Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.6668736706916562271  
+ 
+[debug] [2020-11-05T17:35:45.558Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 05 Nov 2020 17:35:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=874","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-05T17:35:45.810Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:33:23)
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:5:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
